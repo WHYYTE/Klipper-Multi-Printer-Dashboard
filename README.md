@@ -19,44 +19,7 @@ Optimiert für **Mainsail / Klipper API**, mehrere Kamerastreams und schnelle No
 * 💾 Drucker & Namen persistent via LocalStorage
 * 🎨 TailwindCSS (CDN, kein Build)
 
----
 
-## 📁 Repository Struktur
-
-Dieses Projekt ist **bewusst als Single-File-Dashboard** umgesetzt (einfach deployen, kein Build-Tool).
-
-```
-klipper-multi-dashboard/
-│
-├── index.html              # Komplettes Dashboard (HTML + CSS + JS)
-├── README.md               # Dokumentation
-│
-└── assets/
-    └── screenshots/        # Optional: Screenshots fürs README
-```
-
-klipper-multi-dashboard/
-│
-├── index.html              # Haupt-Dashboard
-├── config.js               # Drucker & Kamera Konfiguration
-├── README.md               # Dokumentation
-│
-├── css/
-│   ├── style.css           # Layout & Grid
-│   ├── cards.css           # Drucker-Karten
-│   └── status.css          # Farben (printing / error / idle)
-│
-├── js/
-│   ├── api.js              # Klipper API Calls
-│   ├── dashboard.js        # Rendering & Logik
-│   ├── actions.js          # Pause / Resume / Cancel
-│   └── utils.js            # Helferfunktionen
-│
-└── assets/
-├── icons/
-└── screenshots/
-
-````
 
 ---
 
@@ -103,10 +66,9 @@ Dieses Dashboard erlaubt **kritische Steuerbefehle**.
 
 ## 🛣 Roadmap
 
-- [ ] Fullscreen Kamera-Modus
+- [x] Fullscreen Kamera-Modus
 - [ ] Globaler Panic‑Button
-- [ ] Browser Notifications bei Fehlern
-- [ ] Drucker‑Health (Stunden, Wartung)
+- [x] Browser Notifications bei Fehlern
 - [ ] Obico / KI‑Fehlererkennung (optional)
 
 ---
